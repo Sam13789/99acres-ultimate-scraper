@@ -29,11 +29,12 @@ A comprehensive, interactive property scraper for 99acres.com with granular cont
 
 ### **Organized Output Structure**
 ```
-output/
-├── json_files/     # Raw scraped JSON data
-├── csv_files/      # Clean optimized CSV files
-└── excel_files/    # Excel files for analysis
+output/                 # Created automatically when scraping
+├── json_files/         # Raw scraped JSON data
+├── csv_files/          # Clean optimized CSV files
+└── excel_files/        # Excel files for analysis
 ```
+*Note: The `output/` folder is created automatically and excluded from Git.*
 
 ## 🛠️ Advanced Usage
 
@@ -104,7 +105,7 @@ python comprehensive_city_scraper.py --cities "1,12" --property-types "1,2,4" --
 │   ├── 📄 AMENITIES.csv                 # Amenity ID mappings
 │   ├── 📄 FEATURES.csv                  # Feature ID mappings
 │   └── 📄 *.csv                         # Other reference mappings
-└── 📁 output/                           # All results here
+└── 📁 output/                           # Created automatically (not in Git)
     ├── 📁 json_files/                   # Raw scraped data
     ├── 📁 csv_files/                    # Processed CSV files
     └── 📁 excel_files/                  # Excel reports
