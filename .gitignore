@@ -1,8 +1,10 @@
 # Output directories
 output/
 *.json
-*.csv
 *.xlsx
+
+# Exclude CSV files only in output directory
+output/**/*.csv
 
 # Python
 __pycache__/
